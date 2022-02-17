@@ -1,0 +1,10 @@
+<%# Array.prototype.map 도 되고, forEach도 된다.%>
+<% testArr.map(function(el){ %>
+    <div>
+        <p onclick=""><%= el.title%></p>
+        <p><%= el.comment%></p>
+    </div>
+
+    <button class="ajaxsend">ajax send</button> 
+    <div class="result"></div>
+<% }); %>
